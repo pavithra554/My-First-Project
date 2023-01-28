@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 2em;
+    font-weight: 400;
+    color: #333 !important;
+    background-color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0 0 15px;
+}
+h2{
+    font-size: 20px !important;
+    line-height: 1.8em !important;
+    font-weight: 700 !important;
+}
+h3{
+    font-size: 18px !important;
+    line-height: 1.8em !important;
+    font-weight: 500 !important;
+}
+h4{
+    font-size: 16px !important;
+    line-height: 1.8em !important;
+    font-weight: 400 !important;
+}
+a{
+    color: #0099ff;
+    text-decoration: none !important;
+}
+a:hover{
+    color: #e6f5ff !important;
+}
+p{
+    margin-bottom: 20px !important;
+}
+.btn{
+    padding: 15px !important; 
+    font-size: 15px !important;
+    font-weight: bold !important; 
+    border: 0 !important;
+    border-radius: 0 !important;
+    text-transform: uppercase !important;
+}
+ .columns-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ .left-col-block{
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+ }
+ .right-col-block{
+    width: 50%;
+    position: absolute;
+    right: 0;
+ }
+ @media(max-width:600px){
+    .left-col-block{
+        width: 100%;
+        position: relative;
+    }
+    .right-col-block{
+        width: 100%;
+        position: relative;
+    }
+ }
+.header{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    vertical-align: middle;
+    position: relative;
+}
+
+.header .profile-image{
+    position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     width: 100%;
+     height: 100%;
+     background-image: url(../img/p1.jpg);
+     background-size: cover;
+     background-position: top-center;
+}
+.header .profile-image::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(-45deg, rgb(67, 67, 117)5%,rgb(106, 194, 94)25% ,transparent 50%, transparent 100%);   
+}
+.header .profile-image::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(45deg, rgb(67, 67, 117)5%,rgb(106, 194, 94)25% ,transparent 50%, transparent 100%);   
+}
+.header .content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10%;
+}
+.header .content h1{
+    font-size: 36px;
+    line-height: 1;
+    margin: 0;
+    color: rgb(177, 78, 78);
+}
+.header .content p{
+    font-size: 20px;
+    color: rgba(16, 3, 53, 0.849);
+}
+.header .content .icon{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.header .content .icon li{
+    display: inline-block;
+    margin: 0 2px;
+}
+ .header .content .icon li a{
+    display: block;
+    font-size: 15px;
+    color: blueviolet;
+    height: 35px;
+    width: 35px;
+    line-height: 32px;
+    text-align: center;
+    border: 2px solid #555;
+    border-radius: 100%;
+} 
+.header .content .icon li a:hover{
+    border-color: #fff;
+}
+.section-wrapper{
+    padding: 50px;
+}
+.section-title{
+    margin-bottom: 10px;
+}
+.section-title h2{
+    color: #444;
+}
+.grey bg{
+    background-color: #555;
+}
+.expertise-item{
+    margin-bottom: 20px;
+}
+.expertise-item h4{
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 700;
+}
